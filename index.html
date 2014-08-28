@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+    <header class="header">
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Odds</h1>
+            <p>Random number matching generator. Enter 3 number between 1 and 44 to view the odds of getting a match.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-4">
+            <label class="sr-only" for="exampleInputPassword2">Set 1</label>
+            <input type="number" class="form-control input-lg input-num" id="set1" placeholder="1" value="33" required>
+          </div>
+          <div class="col-xs-4">
+            <label class="sr-only" for="exampleInputPassword2">Set 2</label>
+            <input type="number" class="form-control input-lg input-num" id="set2" placeholder="2" value="5" required>
+          </div>
+          <div class="col-xs-4">
+            <label class="sr-only" for="exampleInputPassword2">Set 3</label>
+            <input type="number" class="form-control input-lg input-num" id="set3" placeholder="3" value="17" required>
+          </div>
+          <!--
+            Too many combinations - kills the browser window
+            Need to add a timeout or something else?
+          -->
+          <!--
+            <div class="col-xs-2">
+              <label class="sr-only" for="exampleInputPassword2">Set 4</label>
+              <input type="number" class="form-control input-lg input-num" id="set4" placeholder="4" value="2" required>
+            </div>
+            <div class="col-xs-2">
+              <label class="sr-only" for="exampleInputPassword2">Set 5</label>
+              <input type="number" class="form-control input-lg input-num" id="set5" placeholder="5" value="40" required>
+            </div>
+            <div class="col-xs-2">
+              <label class="sr-only" for="exampleInputPassword2">Set 6</label>
+              <input type="number" class="form-control input-lg input-num" id="set6" placeholder="6" value="27" required>
+            </div>
+          -->
+          <div class="col-xs-12 input-actions">
+            <button type="button" class="btn btn-default btn-lg randomButton">Start</button>
+            <button type="button" class="btn btn-default btn-lg reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="alert alert-danger hidden" role="alert">
+            <strong>Aw snap!</strong> Only the numbers 1 - 44 are allowed. No negative numbers, letters or symbols.</p>
+          </div>
+
+          <div class="col-md-12">
+            <h2 class="combos">Possible Combinations: <span id="combos">0</span></h2>
+          </div>
+          <div class="col-md-12">
+            <p class="countParagraph hidden">If you bet $1 a day on these same numbers, then it would have taken <span id="years"></span> years to win and spent <span id="money">$</span><span id="count"></span>.</p>
+          </div>
+
+          <h3>All Combinations</h3>
+          <hr>
+
+          <div id="numbers" class="col-md-12"></div>
+
+        </div>
+      </div>
+    </div><!-- /container -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <footer>
+            <hr>
+            <p>A JavaScript Project by <a href="http://mikecarretta.github.io" title="Mike Carretta Github Page"> Mike Carretta</a></p>
+          </footer>
+        </div>
+      </div>
+    </div><!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

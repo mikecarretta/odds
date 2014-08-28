@@ -1,0 +1,109 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  padding: 2em 0 1em 0;
+  background: #232212;
+}
+.header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 6em;
+  color: #d6421b;
+  text-align: center;
+}
+.header p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8em;
+  color: #ffe8c1;
+  text-align: center;
+  padding-bottom: 1.6em;
+}
+
+.alert {
+  margin-top: 1.4em;
+}
+
+.results {
+  float: left;
+  padding: 4px 6px;
+  margin: 3px 3px 0 0;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.match {
+  font-weight: bold;
+  color: green;
+}
+
+.input-num {
+  background-color: #302f1f;
+}
+  .input-lg {
+    height: 60px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.6;
+  }
+  .form-control {
+    border: 1px solid #161505;
+  }
+
+.input-actions {
+  text-align: center;
+  padding: 20px 0;
+}
+  .btn-default {
+    color: #fff;
+    background-color: #7c7b6b;
+    border-color: #636252;
+  }
+
+.combos {
+  text-align: center;
+}
+  #combos {
+    color: #d6421b;
+    font-size: 1.2em;
+    font-weight: 800;
+  }
+
+.countParagraph {
+  font-size: 1.4em;
+  background-color: #f5f5f5;
+  color: #232212;
+  text-align: center;
+  padding: 1em 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 1em 0;
+}
+  #years,
+  #count,
+  #money {
+    color: #d6421b;
+    font-size: 1.6em;
+    font-weight: 700;
+  }
+#numbers {
+  padding: 1em 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
